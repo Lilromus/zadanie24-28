@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <style>
+   .ex {
+    border: solid 1px #000000;
+    background: #fffff5;
+    font-family: "Courier New", Courier, monospace; 
+    padding: 7px;
+    font-size: 80%;
+    margin: 0 0 1em;
+   }
+  </style>
+
+  <script type="text/javascript">
+   function okno_zamknij_kruk()
+   {
+   window.close()
+   }
+   </script>
+
+
+ </head>
+ <body>
+   Kod do pliku zadanie23.html
+  <p class="ex"></br>
+    &lt;html></br>
+&lt;body></br>
+&lt;div style="color:purple;font-size:45px;"></br>
+&lt;script></br>
+var c_kru=parseFloat(prompt("podaj bok najdłuższy bok=","")); </br>
+var b_kru=parseFloat(prompt("podaj bok dowolny bok=",""));</br>
+var a_kru=Math.sqrt((c_kru * c_kru)-(b_kru * b_kru));</br>
+var obw_kru=a_kru+b_kru+c_kru;</br>
+var pole_kru=a_kru*b_kru/2;</br>
+</br>
+var alfa_kru=Math.asin(a_kru/c_kru)*180/Math.PI;</br>
+alfa_kru=alfa_kru.toFixed(3);</br>
+var beta_kru=90-alfa_kru;</br>
+</br>
+var h1_kru=a_kru;</br>
+h1_kru=h1_kru.toFixed(3);</br>
+var h2_kru=b_kru;</br>
+h2_kru=h2_kru.toFixed(3);</br>
+var h3_kru=a_kru*b_kru/c_kru;</br>
+h3_kru=h3_kru.toFixed(3);</br>
+</br>
+
+</br>
+var sin_alfa = a_kru/c_kru;</br>
+sin_alfa=sin_alfa.toFixed(3);</br>
+var cos_alfa = b_kru/c_kru;</br>
+cos_alfa=cos_alfa.toFixed(3);</br>
+var tg_alfa = a_kru/b_kru;</br>
+tg_alfa=tg_alfa.toFixed(3);</br>
+var ctg_alfa = b_kru/a_kru;</br>
+ctg_alfa=ctg_alfa.toFixed(3);</br>
+</br>
+</br>
+document.write("Trzeci bok = "+a_kru.toFixed(3)+"&lt;br>");</br>
+document.write("Obwód = "+obw_kru.toFixed(3)+"&lt;br>");</br>
+document.write("Pole = "+pole_kru.toFixed(3)+"&lt;br>");</br>
+</br>
+document.write("Kąt &#945 = "+alfa_kru+"&lt;br>");</br>
+document.write("Kąt &#946; = "+beta_kru+"&lt;br>");</br>
+document.write("Kąt &#947; = 90 &lt;br>");</br>
+</br>
+document.write("Pierwsza wysokość = "+h1_kru+"&lt;br>");</br>
+document.write("Druga wysokość ="+h2_kru+"&lt;br>");</br>
+document.write("Trzecia wysokość="+h3_kru +"&lt;br>");</br>
+</br>
+</br>
+document.write("sin(&#945) wynosi = "+sin_alfa+"&lt;br>");</br>
+document.write("cos(&#945) wynosi ="+cos_alfa+"&lt;br>");</br>
+document.write("tg(&#945) wynosi="+tg_alfa+"&lt;br>");</br>
+document.write("ctg(&#945) wynosi="+ctg_alfa+"&lt;br>");</br>
+ &lt;/script></br>
+ &lt;/div></br>
+&lt;/body></br>
+&lt;/html> </br>
+    </p>
+  </body>
+</html>

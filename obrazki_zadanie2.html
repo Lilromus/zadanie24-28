@@ -1,0 +1,39 @@
+<html>
+ <head>
+ <script language="JavaScript">
+function okno_zamknij_kruk()
+ {
+ window.close()
+ }
+function WinOpen_1kruk()
+ {
+window.open("picture1.html","grafika 1","toolbar=no,directories=no,menubar=no,height=300,width=220,top=300,left=15");
+ }
+ function WinOpen_2kruk()
+ {
+window.open("picture2.html","grafika 2","toolbar=no,directories=no,menubar=no,height=300,width=220,top=300,left=265");
+ }
+ function WinOpen_3kruk()
+ {
+window.open("picture3.html","grafika 3","toolbar=no,directories=no,menubar=no,height=300,width=220,top=300,left=515");
+ }
+ function WinOpen_4kruk()
+ {
+window.open("picture4.html","grafika 4","toolbar=no,directories=no,menubar=no,height=300,width=220,top=300,left=765");
+ }
+ </script>
+ </head>
+<body>
+<input type="button" name="p" value="grafika 1" onclick="WinOpen_1kruk(' ')">
+
+<input type="button" name="pr" value="grafika 2" onclick="WinOpen_2kruk(' ')">
+
+<input type="button" name="prz" value="grafika 3" onclick="WinOpen_3kruk(' ')">
+
+<input type="button" name="przy" value="grafika 4" onclick="WinOpen_4kruk(' ')">
+</br> 
+</br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_kruk()"/>  
+
+</body>
+</html>

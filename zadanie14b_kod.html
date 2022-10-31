@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <style>
+   .ex {
+    border: solid 1px #000000;
+    background: #fffff5;
+    font-family: "Courier New", Courier, monospace; 
+    padding: 7px;
+    font-size: 80%;
+    margin: 0 0 1em;
+   }
+  </style>
+
+  <script type="text/javascript">
+   function okno_zamknij_kruk()
+   {
+   window.close()
+   }
+   </script>
+
+
+ </head>
+ <body>
+   Kod do pliku zadanie14b.html
+  <p class="ex">
+    &lt;html&gt;</br>
+    &lt;head&gt;</br>
+        &lt;title&gt; zadanie 14a &lt;/title&gt;</br>
+        &lt;meta charset=&quot;utf-8&quot;&gt;</br>
+    &lt;/head&gt;</br>
+&lt;body&gt;</br>
+&lt;div style=&quot;color:green;font-size:53px;&quot;&gt;</br>
+&lt;script language=&quot;JavaScript&quot; type=&quot;text/javascript&quot;&gt;</br>
+var stopnie_kru=(prompt(&quot;wprowadz stopnie:&quot;,&quot;&quot;));</br>
+var radiana_kru=(prompt(&quot;wprowadz radiane:&quot;,&quot;&quot;));</br>
+</br>
+var radiana2_kru=Math.PI*stopnie_kru/180;  </br>
+var stopnie2_kru=180*radiana_kru/Math.PI;</br>
+radiana_kru_zaokroglana=radiana2_kru.toFixed(2); </br>
+stopnie_kru_zaokroglana=stopnie2_kru.toFixed(2);</br>
+</br>
+</br>
+document.write(&quot;Radiana wynosi = &quot;+radiana_kru_zaokroglana+&quot;&lt;/br&gt;&quot;);</br>
+document.write(&quot;Stopnie wynosi = &quot;+stopnie_kru_zaokroglana+&quot;&lt;/br&gt;&quot;);</br>
+</br>
+</br>
+</br>
+</br>
+&lt;/script&gt;</br>
+</br>
+&lt;/body&gt;</br>
+&lt;/html&gt;</br>
+</br>
+    </p>
+  </body>
+</html>

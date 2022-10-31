@@ -1,0 +1,49 @@
+<html> 
+<head> 
+<title>
+Obliczenia pola i obwód prostokąta
+</title>
+ <script language="JavaScript">
+function pole_kru(a_kru,b_kru)
+{
+                 a_kru=parseFloat(a_kru)
+                 b_kru=parseFloat(b_kru)
+                 pole=a_kru*b_kru
+                 document.getElementsByName('pole')[0].value=pole.toFixed(2); 
+                 alert("Pole="+pole.toFixed(2)+" cm^2"); 
+                 pokaz1.innerHTML="Pole="+pole.toFixed(2)+" cm^2"+"<br>";
+}
+    function obwod_kru(a_kru,b_kru)
+  {
+    a_kru=parseFloat(a_kru)
+    b_kru=parseFloat(b_kru)
+   obwod=(a_kru*2)+(b_kru*2)
+   document.getElementsByName('obwod')[0].value=obwod.toFixed(2);
+   alert("Obw="+obwod.toFixed(2)+" cm");
+   pokaz2.innerHTML="Obw="+obwod.toFixed(2)+"cm";
+  }
+      </script>
+</head> 
+<body> 
+         Pobliczanie P i Obw prostokąta
+<br> <br>
+         <form name="formularz" action="..." onsubmit="pole_kru(this.a_kru.value,this.b_kru.value); 
+         obwod_kru(this.a_kru.value,this.b_kru.value);return false"> 
+ Podaj a=
+           <input size="6" name="a_kru">
+ Podaj b=
+         <input size="6" name="b_kru">
+ <br> <br>
+         <input TYPE="submit" Value="oblicz" >
+ <br> <br>
+ Pole=
+         <input size="6" name="pole">
+ Obwód=
+          <input size="6" name="obwod">
+</form>
+<table>
+           <tr id="pokaz1"></tr>
+           <tr id="pokaz2"></tr>
+</table>
+</body> 
+</html>

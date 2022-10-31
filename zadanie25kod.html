@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <style>
+   .ex {
+    border: solid 1px #000000;
+    background: #fffff5;
+    font-family: "Courier New", Courier, monospace; 
+    padding: 7px;
+    font-size: 80%;
+    margin: 0 0 1em;
+   }
+  </style>
+
+  <script type="text/javascript">
+   function okno_zamknij_kruk()
+   {
+   window.close()
+   }
+   </script>
+
+
+ </head>
+ <body>
+   Kod do pliku zadanie25.html
+  <p class="ex">
+    &lt;html&gt;</br>
+    &lt;head&gt;</br>
+        &lt;meta charset=&quot;utf-8&quot;&gt;</br>
+        &lt;title&gt;Zadanie 25&lt;/title&gt;</br>
+        &lt;style&gt;</br>
+       .ex {</br>
+        border: solid 1px #000000;</br>
+        background: #fffff5;</br>
+        font-family: &quot;Courier New&quot;, Courier, monospace; </br>
+        padding: 7px;</br>
+        font-size: 80%;</br>
+        margin: 0 0 1em;</br>
+       }</br>
+      &lt;/style&gt;</br>
+    </br>
+    &lt;/head&gt;</br>
+    &lt;body&gt;</br>
+    &lt;h2&gt;1. W jaki spos&oacute;b można określić właściwość danego obiektu ( dwa sposoby wraz z</br>
+    przykładami)? (odpowiedź poniżej)&lt;/h2&gt;</br>
+</br>
+</br>
+    &lt;p class=&quot;ex&quot;&gt;</br>
+    &lt;font size = &quot;4&quot; face=&quot;Arial&quot;&gt;&lt;u&gt;Właściwość danego obiektu można określić (wpisać daną do pola</br>
+    odpowiedzialnego za właściwość)&lt;/u&gt;&lt;/font&gt;&lt;/br&gt;</br>
+    &lt;strong&gt;Spos&oacute;b 1&lt;/strong&gt;&lt;/br&gt;</br>
+    Używając zapisu postaci:&lt;/br&gt;</br>
+    a)&lt;/br&gt;</br>
+    &lt;strong&gt;nazwa_obiektu.nazwa_właściwości=&quot;tekst&quot;;&lt;/strong&gt; -&gt; dla właściwości typu tekstowego&lt;/br&gt;</br>
+    np.&lt;/br&gt;</br>
+    auto.marka=&quot;Opel Omega&quot;;&lt;/br&gt;</br>
+    b)&lt;/br&gt;</br>
+    &lt;strong&gt;nazwa_obiektu.nazwa_właściwości=liczba;&lt;/strong&gt; &rarr; dla właściwości typu liczbowego&lt;/br&gt;</br>
+    np.&lt;/br&gt;</br>
+    auto.rok=1996;&lt;/br&gt;</br>
+    auto.cena=25000;&lt;/br&gt;</br>
+    &lt;strong&gt;Spos&oacute;b 2&lt;/br&gt;&lt;/strong&gt;</br>
+    używając zapisu postaci:&lt;/br&gt;</br>
+    &lt;strong&gt;nazwa_obiektu[nazwa_właściwości];&lt;/br&gt;&lt;/strong&gt;</br>
+    np. auto[cena]=25000;&lt;/br&gt;</br>
+    &lt;/p&gt;</br>
+</br>
+    &lt;h2&gt;2. W jaki spos&oacute;b można odwołać się do p&oacute;l (właściwości) i metod? (odpowiedź poniżej)&lt;/h2&gt;</br>
+    &lt;p class=&quot;ex&quot;&gt;</br>
+    &lt;font size = &quot;4&quot; face=&quot;Arial&quot;&gt;&lt;u&gt;Odwołanie do p&oacute;l (właściwości) i metod.</br>
+    &lt;/u&gt;&lt;/font&gt;&lt;/br&gt;</br>
+</br>
+    Do właściwości i metod można się odwołać podobnie jak do zwykłych zmiennych&lt;/br&gt;</br>
+    i funkcji, trzeba tylko przed ich nazwą umieścić nazwę obiektu, kt&oacute;rego są elementami&lt;/br&gt;</br>
+    (np. zmienną, kt&oacute;ra przechowuje dany obiekt), i kropkę.&lt;/br&gt;</br>
+    &lt;/br&gt;</br>
+    &lt;/br&gt;</br>
+    np. console.log(samochod1.kolor); &rarr; wyświetla kolor obiektu samochod&lt;/br&gt;</br>
+</br>
+    &lt;/p&gt;</br>
+</br>
+    &lt;h2&gt;3. Wymień cechy charakterystyczne konstruktora. (odpowiedź poniżej)&lt;/h2&gt;</br>
+    &lt;p class=&quot;ex&quot;&gt;</br>
+    &lt;font size = &quot;4&quot; face=&quot;Arial&quot;&gt;&lt;u&gt;Cechy charakterystyczne konstruktora:</br>
+    &lt;/u&gt;&lt;/font&gt;&lt;/br&gt;</br>
+</br>
+    &bull; jest wywoływany (uruchamiany) automatycznie w chwili tworzenia obiektu danej klasy - na&lt;/br&gt;</br>
+    rzecz tego obiektu,&lt;/br&gt;</br>
+    &bull; nazywa się tak samo jak klasa,&lt;/br&gt;</br>
+    &bull; nie zwraca żadnej wartości ,&lt;/br&gt;</br>
+    &bull; może przyjmować argumenty - tak jak zwykła funkcja czy metoda, aby następnie powołać do&lt;/br&gt;</br>
+    życia obiekt za pomocą operatora &lt;strong&gt;new&lt;/strong&gt;. &lt;/br&gt;</br>
+</br>
+    &lt;/p&gt;</br>
+</br>
+    &lt;h2&gt;4. Konstruowanie obiektu na podstawie przykładu&rarr;obiekt ma trzy pola oraz jedną metodę.&lt;/h2&gt;</br>
+    &lt;p class=&quot;ex&quot;&gt;</br>
+    &lt;font size = &quot;4&quot; face=&quot;Arial&quot;&gt;&lt;u&gt;Konstruowanie obiekt&oacute;w-&gt;obiekt ma trzy pola oraz jedną metodę.</br>
+    &lt;/u&gt;&lt;/font&gt;&lt;/br&gt;</br>
+    var osoba_1 =&lt;/br&gt;</br>
+    {&lt;/br&gt;</br>
+    nazwisko : &lsquo;Kowalski&rsquo;,&lt;/br&gt;</br>
+    imie :&rsquo;Jan&rsquo;,&lt;/br&gt;</br>
+    zawod :&rsquo;piekarz&rsquo;,&lt;/br&gt;</br>
+    wyświetl :function ()&lt;/br&gt;</br>
+    {&lt;/br&gt;</br>
+    Document.write(this.nazwisko + &lsquo; &lsquo; + this.imie)&lt;/br&gt;</br>
+    }&lt;/br&gt;</br>
+    }&lt;/br&gt;</br>
+    &lt;/br&gt;</br>
+    &lt;/br&gt;</br>
+    Uwaga1:</br>
+    Słowo kluczowe &lt;strong&gt;this&lt;/strong&gt; &rarr; pozwala odwołać się do pola lub metody obiektu z wnętrza tego obiektu.&lt;/br&gt;</br>
+    Uwaga2:&lt;/br&gt;</br>
+    Metody i pola muszą być odzielne przecinkami w obrębie jednego obiektu.&lt;/br&gt;</br>
+</br>
+</br>
+    &lt;/p&gt;</br>
+</br>
+</br>
+    &lt;/p&gt;</br>
+    &lt;h2&gt;5. Znaczenie słowa this. Jak oddzielamy pola oraz metody? (odpowiedź poniżej)&lt;/h2&gt;</br>
+</br>
+    &lt;p class=&quot;ex&quot;&gt;</br>
+    &lt;font size = &quot;4&quot; face=&quot;Arial&quot;&gt;&lt;u&gt;Tworzenie konstruktora</br>
+    &lt;/u&gt;&lt;/font&gt;&lt;/br&gt;</br>
+    Zostanie utworzony konstruktor o nazwie &lt;strong&gt;klient&lt;/strong&gt; z właściwościami &lt;strong&gt;nazwisko, imie, zawod&lt;/strong&gt; oraz&lt;/br&gt;</br>
+    metodą &lt;strong&gt;wypisz()&lt;/strong&gt;. Właściwościom obiektu zostały przypisane wartości parametr&oacute;w. Użyte słowo&lt;/br&gt;</br>
+    kluczowe &lt;strong&gt;this&lt;/strong&gt; odnosi się do aktualnego obiektu i pozwala na przypisanie wartości parametru do&lt;/br&gt;</br>
+    odpowiedniego pola tego obiektu.&lt;/br&gt;</br>
+</br>
+    function klient(nazwisko_k,imie_k,zawod_k)&lt;/br&gt;</br>
+    {&lt;/br&gt;</br>
+    this.nazwisko=nazwisko_k;&lt;/br&gt;</br>
+    this.imie=imie_k;&lt;/br&gt;</br>
+    this.zawod=zawod_k;&lt;/br&gt;</br>
+    &lt;/br&gt;</br>
+    wypisz = function ()&lt;/br&gt;</br>
+     {&lt;/br&gt;</br>
+     alert(this.nazwisko + ' ' + this.imie)&lt;/br&gt;</br>
+     }&lt;/br&gt;</br>
+    }&lt;/br&gt;</br>
+</br>
+    &lt;/p&gt;</br>
+</br>
+    &lt;h2&gt;6. Konstruktor w JS na podstawie przykładu wraz z opisem.&lt;/h2&gt;</br>
+    &lt;font size = &quot;4&quot; face=&quot;Arial&quot;&gt;&lt;/font&gt;Chcemy utworzyć ich kilka. Każdy obiekt powinien posiadać jakieś właściwości i metody np. width,&lt;/br&gt;</br>
+    height i wypisz().&lt;/br&gt;</br>
+    Aby utworzyć kilka podobnych obiekt&oacute;w posłużymy się klasą obiektu.&lt;/br&gt;</br>
+    W JS w przeciwieństwie do innych język&oacute;w nie mamy mechanizmu konstruktora, ale samą klasę&lt;/br&gt;</br>
+    możemy stworzyć za pomocą zwykłej funkcji:&lt;/br&gt;</br>
+    &lt;/font&gt;</br>
+    &lt;p class=&quot;ex&quot;&gt;</br>
+      function SuperObjectClass(_width,_height) {&lt;/br&gt;</br>
+        this.width = _width;&lt;/br&gt;</br>
+        this.height = _height;&lt;/br&gt;</br>
+        this.print = function() {&lt;/br&gt;</br>
+        console.log(this.width + 'x' + this.height)&lt;/br&gt;</br>
+        }&lt;/br&gt;</br>
+       }&lt;/br&gt;</br>
+       var myObject1 = new SuperObjectClass(200, 100);&lt;/br&gt;</br>
+       var myObject2 = new SuperObjectClass(300, 200);&lt;/br&gt;</br>
+       myObject1.print(); //wypisze 200x100&lt;/br&gt;</br>
+       myObject2.width = 600;&lt;/br&gt;</br>
+       myObject2.print() //wypisze 600x200&lt;/br&gt;</br>
+    &lt;/p&gt;</br>
+    &lt;h2&gt;7. Znaczenie słowa kluczowego&lt;strong&gt; New&lt;/strong&gt; wraz z przykładem.&lt;/h2&gt;</br>
+</br>
+    &lt;p class=&quot;ex&quot;&gt;</br>
+    &lt;font size = &quot;4&quot; face=&quot;Arial&quot;&gt;&lt;u&gt;Słowo kluczowe new</br>
+    &lt;/u&gt;&lt;/font&gt;&lt;/br&gt;</br>
+</br>
+    Do utworzenia &lt;strong&gt;&lt;u&gt;nowego&lt;/u&gt;&lt;/strong&gt; obiektu na podstawie konstruktora stosowane jest &lt;strong&gt;słowo kluczowe new&lt;/strong&gt;.</br>
+    Przykład</br>
+    var osoba1 = new klient('Kowalski', 'Jan', 'kierowca');&lt;/br&gt;</br>
+    var osoba2 = new klient('Nowak', 'Anna', 'sekretarka');&lt;/br&gt;</br>
+    Powstały dwa nowe obiekty osoba1 i osoba2 należące do klasy klient&lt;/br&gt;</br>
+</br>
+</br>
+    &lt;/p&gt;</br>
+    &lt;h2&gt;8. Znaczenie słowa kluczowego prototype wraz z przykładem i opisem ( szczeg&oacute;lnie ważny</br>
+    tekst pogrubiony).&lt;/h2&gt;</br>
+    &lt;p class=&quot;ex&quot;&gt;</br>
+    &lt;font size = &quot;4&quot; face=&quot;Arial&quot;&gt;&lt;u&gt;Właściwość prototype</br>
+    &lt;/u&gt;&lt;/font&gt;&lt;/br&gt;</br>
+    Do definowania metod i właściwości dla obiektu jest wykorzystana właściwości &lt;strong&gt;prototype&lt;/strong&gt;.&lt;/br&gt;</br>
+    &lt;/br&gt;</br>
+    Przykład&lt;/br&gt;</br>
+    &lt;/br&gt;</br>
+    function klient()&lt;/br&gt;</br>
+    {&lt;/br&gt;</br>
+    this.nazwisko='Bielski';&lt;/br&gt;</br>
+    this.imie='Paweł';&lt;/br&gt;</br>
+    }&lt;/br&gt;</br>
+    klient.prototype.pisz_dane = function ()&lt;/br&gt;</br>
+     {&lt;/br&gt;</br>
+     document.write(this.nazwisko + ' ' + this.imie)&lt;/br&gt;</br>
+     }&lt;/br&gt;</br>
+    klient.prototype.zawod = 'kierowca';&lt;/br&gt;</br>
+    var osoba1 = new klient();&lt;/br&gt;</br>
+    osoba1.pisz_dane();&lt;/br&gt;</br>
+</br>
+</br>
+</br>
+</br>
+    Opis do przykładu powyżej:&lt;/br&gt;</br>
+    &lt;/br&gt;</br>
+    W definicji konstruktora nie zostały zadeklarowane żadne metody i właściwości. Dopiero po użyciu&lt;/br&gt;</br>
+    właściwości prototype została dodana metoda pisz_dane oraz właściwość zawod. Od tej pory każdy&lt;/br&gt;</br>
+    nowo tworzony obiekt na podstawie konstruktora klient będzie posiadał tę dodatkową właściwość i&lt;/br&gt;</br>
+    metodę.&lt;/br&gt;</br>
+    &lt;/br&gt;</br>
+    &lt;strong&gt;Właściwość prototype może być r&oacute;wnież wykorzystana do dodawania dodatkowych&lt;/br&gt;</br>
+    metod lub właściwości do istniejących obiekt&oacute;w.&lt;/br&gt;&lt;/strong&gt;</br>
+    &lt;/p&gt;</br>
+    &lt;/body&gt;</br>
+    &lt;/html&gt; </br>
+    </p>
+  </body>
+</html>

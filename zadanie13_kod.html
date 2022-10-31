@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <style>
+   .ex {
+    border: solid 1px #000000;
+    background: #fffff5;
+    font-family: "Courier New", Courier, monospace; 
+    padding: 7px;
+    font-size: 80%;
+    margin: 0 0 1em;
+   }
+  </style>
+
+  <script type="text/javascript">
+   function okno_zamknij_kruk()
+   {
+   window.close()
+   }
+   </script>
+
+
+ </head>
+ <body>
+   Kod do pliku zadanie13.html
+  <p class="ex">
+  </br>
+    &lt;html&gt;</br>
+    &lt;body&gt;</br>
+    &lt;div style=&quot;color:purple;font-size:80px;&quot;&gt;</br>
+     &lt;script language=&quot;JavaScript&quot;&gt;</br>
+    var a_kruk=prompt(&quot;wczytaj A=&quot;,&quot;&quot;);</br>
+    var b_kruk=prompt(&quot;wczytaj B=&quot;,&quot;&quot;);</br>
+    var dzialanie;</br>
+</br>
+    var a_kruk=parseFloat(a_kruk);</br>
+    var b_kruk=parseFloat(b_kruk);</br>
+</br>
+</br>
+    c_kruk=a_kruk+b_kruk;</br>
+    dzialanie=(a_kruk*a_kruk*a_kruk)+(3*((a_kruk*a_kruk)*b_kruk))+(3*(a_kruk*(b_kruk*b_kruk)))+(b_kruk*b_kruk*b_kruk);</br>
+    document.write(&quot;(&quot;+a_kruk+&quot;+&quot;+b_kruk+&quot;)^3=&quot;+a_kruk+&quot;^3+3*&quot;+a_kruk+&quot;^2*&quot;+b_kruk+&quot;+3*&quot;+a_kruk+&quot;*&quot;+b_kruk+&quot;^2+&quot;+b_kruk+&quot;^3=&quot;+dzialanie+&quot;&quot;);</br>
+</br>
+     &lt;/script&gt;</br>
+    &lt;/div&gt;</br>
+    &lt;/body&gt;</br>
+    &lt;/html&gt;</br>
+</br>
+</p>
+</body>
+</html>

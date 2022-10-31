@@ -1,0 +1,35 @@
+<html>
+<head>
+<script type="text/javascript">
+function Pamiec(firma_r,pojemnosc_r,typ_r)
+{
+this.firma=firma_r;
+this.pojemnosc=pojemnosc_r;
+this.typ=typ_r;
+}
+
+Pamiec.prototype.wypisz = function () 
+{
+alert(this.firma + ' ' + this.pojemnosc+ ' ' + this.typ);
+};
+
+var pamiec1 = new Pamiec("Kingstone", "8gb", "DDR4"); 
+var pamiec2 = new Pamiec("Samsung", "16gb", "DDR5");
+pamiec1.wypisz();
+pamiec2.wypisz();
+document.write("dostęp do właściwości"+"<br>");
+document.write("kostka pierwsza"+" "+pamiec1.firma+" "+pamiec1.pojemnosc+" "+pamiec1.typ+"<br>");
+document.write("kostka druga"+" "+pamiec2.firma+" "+pamiec2.pojemnosc+" "+pamiec2.typ+"<br>");
+pamiec1.kolor="czarny";
+pamiec2.kolor="bialy";
+Pamiec.pamiec_pokaz_Kruk=function() {alert("kolor: " + pamiec1.kolor)}
+Pamiec.pamiec_pokaz_Kruk();
+Pamiec.pamiec_pokaz_Kruk2=function() {alert("kolor: " + pamiec2.kolor)}
+Pamiec.pamiec_pokaz_Kruk2();
+</script>
+</head>
+<body>
+<br>
+programowanie obiektowe 
+</body>
+</html>

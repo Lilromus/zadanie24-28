@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>
+Obliczenia długość drabiny i kąta
+</title>
+<script language="JavaScript">
+function drabina_kru(D_kru,X_kru)
+{
+D_kru=parseFloat(D_kru)
+X_kru=parseFloat(X_kru)
+var drabina=Math.sqrt((D_kru*D_kru) + (X_kru*X_kru));
+document.getElementsByName('drabina')[0].value=drabina.toFixed(2);
+alert("Długość drabiny="+drabina.toFixed(2)+"m^2");
+pokaz1.innerHTML="Długość drabiny="+drabina.toFixed(2)+"m"+"<br>";
+}
+
+
+function kat_kru(D_kru,drabina)
+{
+D_kru=parseFloat(D_kru)
+drabina=parseFloat(drabina)
+kat=Math.asin(D_kru/drabina)*180/Math.PI;
+document.getElementsByName('kat')[0].value=kat.toFixed(2);
+alert("Kąt nachylenia wynosi="+kat.toFixed(2)+"°");
+pokaz2.innerHTML="Kąt="+kat.toFixed(2)+"°";
+}
+</script>
+</head>
+<body>
+Pobliczanie długości drabinki i kąt nachylenia
+<br> <br>
+<form name="formularz" action="..." onsubmit="drabina_kru(this.D_kru.value,this.X_kru.value);
+kat_kru(this.D_kru.value,this.drabina.value);return false">
+Podaj D=
+<input size="6" name="D_kru">
+Podaj X=
+<input size="6" name="X_kru">
+<br> <br>
+<input TYPE="submit" Value="oblicz" >
+<br> <br>
+Drabina=
+<input size="6" name="drabina">
+kat=
+   <input size="6" name="kat">
+
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+</table>
+</body>
+</html>

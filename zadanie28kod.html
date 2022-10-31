@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <style>
+   .ex {
+    border: solid 1px #000000;
+    background: #fffff5;
+    font-family: "Courier New", Courier, monospace; 
+    padding: 7px;
+    font-size: 80%;
+    margin: 0 0 1em;
+   }
+  </style>
+
+  <script type="text/javascript">
+   function okno_zamknij_kruk()
+   {
+   window.close()
+   }
+   </script>
+
+
+ </head>
+ <body>
+   Kod do pliku zadanie28.html
+  <p class="ex">
+    &lt;html&gt;</br>
+&lt;head&gt;</br>
+&lt;script type=&quot;text/javascript&quot;&gt;</br>
+function Pamiec(firma_r,pojemnosc_r,typ_r)</br>
+{</br>
+this.firma=firma_r;</br>
+this.pojemnosc=pojemnosc_r;</br>
+this.typ=typ_r;</br>
+}</br>
+</br>
+Pamiec.prototype.wypisz = function () </br>
+{</br>
+alert(this.firma + ' ' + this.pojemnosc+ ' ' + this.typ);</br>
+};</br>
+</br>
+var pamiec1 = new Pamiec(&quot;Kingstone&quot;, &quot;8gb&quot;, &quot;DDR4&quot;); </br>
+var pamiec2 = new Pamiec(&quot;Samsung&quot;, &quot;16gb&quot;, &quot;DDR5&quot;);</br>
+pamiec1.wypisz();</br>
+pamiec2.wypisz();</br>
+document.write(&quot;dostęp do właściwości&quot;+&quot;&lt;br&gt;&quot;);</br>
+document.write(&quot;kostka pierwsza&quot;+&quot; &quot;+pamiec1.firma+&quot; &quot;+pamiec1.pojemnosc+&quot; &quot;+pamiec1.typ+&quot;&lt;br&gt;&quot;);</br>
+document.write(&quot;kostka druga&quot;+&quot; &quot;+pamiec2.firma+&quot; &quot;+pamiec2.pojemnosc+&quot; &quot;+pamiec2.typ+&quot;&lt;br&gt;&quot;);</br>
+pamiec1.kolor=&quot;czarny&quot;;</br>
+pamiec2.kolor=&quot;bialy&quot;;</br>
+Pamiec.pamiec_pokaz_Kruk=function() {alert(&quot;kolor: &quot; + pamiec1.kolor)}</br>
+Pamiec.pamiec_pokaz_Kruk();</br>
+Pamiec.pamiec_pokaz_Kruk2=function() {alert(&quot;kolor: &quot; + pamiec2.kolor)}</br>
+Pamiec.pamiec_pokaz_Kruk2();</br>
+&lt;/script&gt;</br>
+&lt;/head&gt;</br>
+&lt;body&gt;</br>
+&lt;br&gt;</br>
+programowanie obiektowe </br>
+&lt;/body&gt;</br>
+&lt;/html&gt;</br>
+</p>
+</body>
+</html>

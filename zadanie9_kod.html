@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <style>
+   .ex {
+    border: solid 1px #000000;
+    background: #fffff5;
+    font-family: "Courier New", Courier, monospace; 
+    padding: 7px;
+    font-size: 80%;
+    margin: 0 0 1em;
+   }
+  </style>
+
+  <script type="text/javascript">
+   function okno_zamknij_kruk()
+   {
+   window.close()
+   }
+   </script>
+
+
+ </head>
+ <body>
+   Kod do pliku zadanie9.html
+  <p class="ex">
+
+    &lt;html></br>
+&lt;body></br>
+&lt;div style="color:green;font-size:31px;"></br>
+&lt;script language="JavaScript"></br>
+</br>
+var D1_kruk=prompt("Dzien 1=","");</br>
+</br>
+</br>
+var G1_kruk=prompt("godzina pierwszego dnia=","");</br>
+</br>
+</br>
+var D2_kruk=prompt("Dzien 2=","");</br>
+</br>
+</br>
+var G2_kruk=prompt("godzina drugiego dnia=","");</br>
+</br>
+</br>
+var suma;</br>
+var suma2;</br>
+var suma3;</br>
+</br>
+</br>
+</br>
+var a=parseFloat(D1_kruk);</br>
+</br>
+var b=parseFloat(D2_kruk);</br>
+</br>
+suma=(a-b)*86400;</br>
+</br>
+if(suma<0)suma=suma*-1;</br>
+</br>
+var suma2=(G1_kruk-G2_kruk)*3600;</br>
+</br>
+if(suma2<0)suma2=suma2*-1;</br>
+</br>
+suma3=suma2+suma;</br>
+</br>
+document.write("miedzy"+a+" dniem stycznia godziną "+G1_kruk+" a "+b+" dniem stycznia godzina "+G2_kruk+" mineło "+suma3+-++" sekund &lt;br>");</br>
+</br>
+</br>
+&lt;/script></br>
+</br>
+&lt;/body></br>
+&lt;/html></br>
+
+    </p>
+  </body>
+</html>

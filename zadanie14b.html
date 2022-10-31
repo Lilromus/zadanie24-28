@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title> zadanie 14a </title>
+        <meta charset="utf-8">
+    </head>
+<body>
+<div style="color:green;font-size:53px;">
+<script language="JavaScript" type="text/javascript">
+var stopnie_kru=(prompt("wprowadz stopnie:",""));
+var radiana_kru=(prompt("wprowadz radiane:",""));
+
+var radiana2_kru=Math.PI*stopnie_kru/180;  
+var stopnie2_kru=180*radiana_kru/Math.PI;
+radiana_kru_zaokroglana=radiana2_kru.toFixed(2); 
+stopnie_kru_zaokroglana=stopnie2_kru.toFixed(2);
+
+
+document.write("Radiana wynosi = "+radiana_kru_zaokroglana+"</br>");
+document.write("Stopnie wynosi = "+stopnie_kru_zaokroglana+"</br>");
+
+
+
+
+</script>
+
+</body>
+</html>

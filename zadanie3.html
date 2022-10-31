@@ -1,0 +1,54 @@
+<html>
+ <head>
+ <title>Teoria</title>
+ <script language="JavaScript">
+ function okno_zamknij_kruk()
+   {
+   window.close()
+   }
+ </script>
+</head>
+
+<body>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_kruk()"/></br>
+<h2>1) Rodzaje okienek</br></h2>
+	• Okienko <strong>alert </strong>– wyświetlająca okienko dialogowe z informacją i przyciskiem OK,</br>
+	• Okienko <strong>prompt </strong>– generująca okno, w którym użytkownik może wpisać wartość, zwracaną następnie do programu.</br>
+	• Okienko <strong>confirm </strong>służy do tego, aby użytkownik coś potwierdził (stąd nazwa confirm).</br>
+</br>
+</br>
+<h2>2) Konwersji liczb </br></h2>
+</br>
+Wczytanie zmiennej z użyciem prompt wykonywane jest jako ciąg znaków dlatego konieczna jest konwersji z ciągu znaków na wartości liczbowe aby </br>wykonywac obliczenia.</br>
+</br>
+parseFloat(zmienna) - konwersja zmiennej do typu float</br>
+parseInt(zmienna) - konwersja zmiennej do typu int (liczbowego)</br>
+toString(zmienna) - konwersja zmiennej do typu łańcuchowego</br>
+</br>
+<h2>3)Omów typy zmiennych w Javascript</br></h2>
+W JavaScript nie ma możliwości definiowania różnych typów zmiennych tak </br>
+jak w C++, typy zmiennych są definiowane w trakcie ich przypisywania.</br>
+Podstawowe zmienne liczbowe w JavaScript to:</br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNumber → Typ liczbowy</br>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp• zmienna całkowite</br>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp• zmiennoprzecinkowe</br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspString → Typ tekstowy</br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspBoolea → Typ logiczny</br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNull → Pusta zawartość</br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspUndefined → Typ niezidentyfikowany</br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspObject → Obiekt</br>
+
+
+<h2>4) Przy nadawaniu nazw zmiennym należy przestrzegać pewnych zasad:</br></h2>
+(trzy zasady)</br>
+</br>
+Przy nadawaniu nazw zmiennym należy przestrzegać pewnych zasad:</br>
+1. Nazwa zmiennej musi się zaczynać od litery, znaku "$" lub "_", może zawierać tylko litery (bez polskich znaków), cyfry oraz "$" i "_".</br>
+<u>Poprawne nazwy zmiennych</u>: zmienna1, $wynik, _rozmiar, wynik1, Rekord, $_gracz</br>
+<u>Błędne nazwy zmiennych</u>: 1zmienna, wynik gry, wysokosc&szerokosc, wynik.rekord, &gracz, wysokość, imie+nazwisko.</br>
+2. Wielkość liter ma znaczenie.</br>
+<u>Rekord i rekord </u>to dwie różne zmienne! Jest to bardzo częsta przyczyna błędów w kodzie początkujących programistów.</br>
+3. Należy nie używać słów kluczowych JavaScript jako nazw zmiennych.</br>
+
+</body>
+</html>

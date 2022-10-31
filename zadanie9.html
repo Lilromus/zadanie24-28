@@ -1,0 +1,39 @@
+<html>
+	<head>
+<div style="color:green;font-size:31px;">
+
+<script language="JavaScript">
+
+var D1_kruk=prompt("Dzien 1=","");
+var G1_kruk=prompt("godzina pierwszego dnia=","");
+var D2_kruk=prompt("Dzien 2=","");
+var G2_kruk=prompt("godzina drugiego dnia=","");
+
+
+var suma;
+var suma2;
+var suma3;
+
+
+
+var a=parseFloat(D1_kruk);
+
+var b=parseFloat(D2_kruk);
+
+suma=(a-b)*86400;
+
+if(suma<0)suma=suma*-1;
+
+var suma2=(G1_kruk-G2_kruk)*3600;
+
+if(suma2<0)suma2=suma2*-1;
+
+suma3=suma2+suma;
+document.write("miedzy"+a+" dniem stycznia godziną "+G1_kruk+" a "+b+" dniem stycznia godzina "+G2_kruk+" mineło "+suma3+" sekund <br>");
+</script>
+</head>
+
+<body>
+</body>
+
+</html>

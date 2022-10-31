@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <style>
+   .ex {
+    border: solid 1px #000000;
+    background: #fffff5;
+    font-family: "Courier New", Courier, monospace; 
+    padding: 7px;
+    font-size: 80%;
+    margin: 0 0 1em;
+   }
+  </style>
+
+  <script type="text/javascript">
+   function okno_zamknij_kruk()
+   {
+   window.close()
+   }
+   </script>
+
+
+ </head>
+ <body>
+   Kod do pliku zadanie14.html
+  <p class="ex">
+    &lt;html&gt;</br>
+    &lt;body&gt;</br>
+    &lt;div style=&quot;color:blue;font-size:49px;&quot;&gt;</br>
+     &lt;script language=&quot;JavaScript&quot;&gt;</br>
+    </br>
+       var N0_mas=prompt(&quot;Podaj N0=&quot;,&quot;&quot;);</br>
+       var N0_mas=parseFloat(N0_mas);</br>
+       var t_mas=prompt(&quot;Podaj t=&quot;,&quot;&quot;);</br>
+       var t_mas=parseFloat(t_mas);</br>
+       var T1_mas=prompt(&quot;Podaj T1/2=&quot;,&quot;&quot;);</br>
+       var T1_mas=parseFloat(T1_mas);</br>
+    </br>
+    </br>
+       var Lambda_mas;</br>
+       var N_mas;</br>
+            Lambda_mas=Math.LN2/T1_mas  ;</br>
+            N_mas=N0_mas*Math.pow(Math.E,(-Lambda_mas*t_mas));      </br>  
+        </br>
+    document.write(&quot;N0=&quot;+N0_mas.toFixed(2)+&quot;[sztuk]&quot;+&quot;&lt;br&gt;&quot;);</br>
+    document.write(&quot;t=&quot;+t_mas.toFixed(2)+&quot;[lat]&quot;+&quot;&lt;br&gt;&quot;);</br>
+    document.write(&quot;T1/2=&quot;+T1_mas.toFixed(2)+&quot;[lat]&quot;+&quot;&lt;br&gt;&quot;);</br>
+    document.write(&quot;Lambda=&quot;+Lambda_mas.toFixed(7)+&quot;[1/rok]&quot;+&quot;&lt;br&gt;&quot;);</br>
+    document.write(&quot;N=&quot;+N_mas.toFixed(7)+&quot;[sztuk]&quot;+&quot;&lt;br&gt;&quot;);</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+    function okno_zamknij_maszk()</br>
+                {</br>
+                window.close()</br>
+                }</br>
+     &lt;/script&gt;</br>
+     &lt;/div&gt;</br>
+     &lt;input type=&quot;button&quot; value=&quot;zamknij okno&quot; onclick=&quot;okno_zamknij_maszk()&quot;/&gt;</br>
+    &lt;/body&gt;</br>
+    &lt;/html&gt;</br>
+    </p>
+  </body>
+</html>

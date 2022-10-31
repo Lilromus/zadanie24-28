@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <style>
+   .ex {
+    border: solid 1px #000000;
+    background: #fffff5;
+    font-family: "Courier New", Courier, monospace; 
+    padding: 7px;
+    font-size: 80%;
+    margin: 0 0 1em;
+   }
+  </style>
+
+  <script type="text/javascript">
+   function okno_zamknij_kruk()
+   {
+   window.close()
+   }
+   </script>
+
+
+ </head>
+ <body>
+   Kod do pliku zadanie21.html
+  <p class="ex">
+
+&lt;html></br>
+&lt;head></br>
+&lt;title></br>
+Obliczenia długość drabiny i kąta</br>
+&lt;/title></br>
+&lt;script language="JavaScript"></br>
+function drabina_kru(D_kru,X_kru)</br>
+{</br>
+D_kru=parseFloat(D_kru)</br>
+X_kru=parseFloat(X_kru)</br>
+var drabina=Math.sqrt((D_kru*D_kru) + (X_kru*X_kru));</br>
+document.getElementsByName('drabina')[0].value=drabina.toFixed(2);</br>
+alert("Długość drabiny="+drabina.toFixed(2)+"m^2");</br>
+pokaz1.innerHTML="Długość drabiny="+drabina.toFixed(2)+"m"+"&lt;br>";</br>
+}</br>
+</br>
+</br>
+function kat_kru(D_kru,drabina)
+{</br>
+D_kru=parseFloat(D_kru)</br>
+drabina=parseFloat(drabina)</br>
+kat=Math.asin(D_kru/drabina)*180/Math.PI;</br>
+document.getElementsByName('kat')[0].value=kat.toFixed(2);</br>
+alert("Kąt nachylenia wynosi="+kat.toFixed(2)+"°");</br>
+pokaz2.innerHTML="Kąt="+kat.toFixed(2)+"°";</br>
+}</br>
+&lt;/script></br>
+&lt;/head></br>
+&lt;body></br>
+Pobliczanie długości drabinki i kąt nachylenia</br>
+&lt;br> &lt;br></br>
+&lt;form name="formularz" action="..." onsubmit="drabina_kru(this.D_kru.value,this.X_kru.value);</br>
+kat_kru(this.D_kru.value,this.drabina.value);return false"></br>
+Podaj D=</br>
+&lt;input size="6" name="D_kru"></br>
+Podaj X=</br>
+&lt;input size="6" name="X_kru"></br>
+&lt;br> &lt;br></br>
+&lt;input TYPE="submit" Value="oblicz" ></br>
+&lt;br> &lt;br></br>
+Drabina=</br>
+&lt;input size="6" name="drabina"></br>
+kat=</br>
+   &lt;input size="6" name="kat"></br>
+</br>
+&lt;/form></br>
+&lt;table></br>
+&lt;tr id="pokaz1">&lt;/tr></br>
+&lt;tr id="pokaz2">&lt;/tr></br>
+&lt;/table></br>
+&lt;/body></br>
+&lt;/html></br>
+
+  </p>
+  </body>
+</html>

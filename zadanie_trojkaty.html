@@ -1,0 +1,53 @@
+<html>
+<body>
+<div style="color:purple;font-size:45px;">
+<script>
+var c_kru=parseFloat(prompt("podaj bok najdłuższy bok=","")); 
+var b_kru=parseFloat(prompt("podaj bok dowolny bok=",""));
+var a_kru=Math.sqrt((c_kru * c_kru)-(b_kru * b_kru));
+var obw_kru=a_kru+b_kru+c_kru;
+var pole_kru=a_kru*b_kru/2;
+
+var alfa_kru=Math.asin(a_kru/c_kru)*180/Math.PI;
+alfa_kru=alfa_kru.toFixed(3);
+var beta_kru=90-alfa_kru;
+
+var h1_kru=a_kru;
+h1_kru=h1_kru.toFixed(3);
+var h2_kru=b_kru;
+h2_kru=h2_kru.toFixed(3);
+var h3_kru=a_kru*b_kru/c_kru;
+h3_kru=h3_kru.toFixed(3);
+
+
+var sin_alfa = a_kru/c_kru;
+sin_alfa=sin_alfa.toFixed(3);
+var cos_alfa = b_kru/c_kru;
+cos_alfa=cos_alfa.toFixed(3);
+var tg_alfa = a_kru/b_kru;
+tg_alfa=tg_alfa.toFixed(3);
+var ctg_alfa = b_kru/a_kru;
+ctg_alfa=ctg_alfa.toFixed(3);
+
+
+document.write("Trzeci bok = "+a_kru.toFixed(3)+"<br>");
+document.write("Obwód = "+obw_kru.toFixed(3)+"<br>");
+document.write("Pole = "+pole_kru.toFixed(3)+"<br>");
+
+document.write("Kąt &#945 = "+alfa_kru+"<br>");
+document.write("Kąt &#946; = "+beta_kru+"<br>");
+document.write("Kąt &#947; = 90 <br>");
+
+document.write("Pierwsza wysokość = "+h1_kru+"<br>");
+document.write("Druga wysokość ="+h2_kru+"<br>");
+document.write("Trzecia wysokość="+h3_kru +"<br>");
+
+
+document.write("sin(&#945) wynosi = "+sin_alfa+"<br>");
+document.write("cos(&#945) wynosi ="+cos_alfa+"<br>");
+document.write("tg(&#945) wynosi="+tg_alfa+"<br>");
+document.write("ctg(&#945) wynosi="+ctg_alfa+"<br>");
+ </script>
+ </div>
+</body>
+</html> 
